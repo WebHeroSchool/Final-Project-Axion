@@ -1,3 +1,23 @@
-.first-section__title {
-	font-family: 'Gotham Pro';
+@media all and (min-width: 1024px) {
+	.header {
+		display: flex;
+		justify-content: space-around;
+		height: 100px;
+		background-color: #dcd6d3;
+	}
+	
+	.header__logo-list {
+		display: flex;
+		align-items: center;
+	}
+
+	.header__elements {
+		display: flex;
+		align-items: center;
+	}
+
+	.elements__flag {
+		width: 30px;
+		height: 15px;
+	}
 }
