@@ -1,13 +1,14 @@
 @media all and (min-width: 1024px) {
+	
+	.body {
+		max-width: 1170px;
+		margin: 0 auto;
+		font-family: 'Gotham Pro';
+	}
+
 	.header {
 		display: flex;
 		justify-content: space-between;
-		position: relative;
-		width: 1170px;
-		height: 100px;
-		left: calc(50% - 1170px/2);
-		top: 0px;
-		background-color: white;
 	}
 
 	.header__logo-list {
@@ -25,15 +26,13 @@
 		align-items: center;
 		text-align: justify;
 		text-transformation: uppercase;
-		padding: 0 0 0 25px;
+		padding: 0 0 0 35px;
 	}
 
 	.menu-list__item {
-		padding: 0 25px 0 0;
-		font-family: 'Gotham Pro';
+		padding: 0 35px 0 0;
 		font-weight: 500;
-		font-size: 12px;
-		line-height: 11px;
+		font-size: 13px;
 		color: black;
 		text-decoration: none;
 	}
@@ -41,40 +40,43 @@
 	.header__elements {
 		display: flex;
 		align-items: center;
-		text-align: justify;
-		text-transformation: uppercase;
 	}
 
 	.elements__line {
+		position: relative;
+		padding: 0 35px 0 0;
 		outline: none;
 		border: none;
 		border-bottom: 1px solid black;
 	}
 
-	.elements__vector {
-		
+	.elements__line::after {
+		content: url(images/Vector-4.png);
 	}
 
 	.elements__sign-in {
-		padding: 0 25px 0 0;
-		font-family: 'Gotham Pro';
+		padding: 0 35px 0 0;
 		font-weight: 500;
-		font-size: 12px;
-		line-height: 11px;
+		font-size: 13px;
 		color: black;
 	}
 
 	.elements__cart {
-		padding: 0 25px 0 0;
-		font-family: 'Gotham Pro';
+		position: relative;
+		padding: 0 35px 0 0;
 		font-weight: 500;
 		font-size: 12px;
-		line-height: 11px;
 		color: black;
 	}
 
-	.elements__number {
-		
+	.elements__cart::after {
+		content: "1";
+		position: absolute;
+		border-radius: 50%;
+		width: 5px;
+		height: 5px;
+		color: white;
+		background-color: black;
 	}
 
 	.elements__flag {
@@ -83,21 +85,105 @@
 	}
 	
 	.first-section {
-		position: relative;
-		top: 15px;
 		display: flex;
 	}
 
-	.first-section__image-background {
-		position: absolute;
-		width: 1170px;
-		height: 300px;
-		left: calc(50% - 1170px/2);
+	.first-section__title {
+		padding: 100px 0 0 50px;
+		font-size: 30px;
+		color: white;
+		z-index: 1;
 	}
 
-	.first-section__title {
-		font-family: 'Gotham Pro';
-		font-size: 30px;
-		line-height: 29px;
+	.first-section__excerpt {
+		position: relative;
+		padding: 0;
+		font-size: 13px;
+		color: white;
+		z-index: 1;
 	}
+
+	.first-section__excerpt::after {
+		content: url(images/Arrow.png);
+		position: absolute;
+	}
+
+	.first-section__image-background {
+		width: 1170;
+		height: 300px;
+	}
+
+	.second-section {
+		
+	}
+
+	.second-section__headline {
+		align-self: center;
+		font-size: 22px;
+		z-index: 1;
+		color: black;
+	}
+
+	.second-section__pictures-trainers {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.black__text {
+		font-size: 12px;
+	}
+
+	.black__price {
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.black__colours {
+		
+	}
+
+	.colours__grey {
+		
+	}
+
+	.brown__text {
+		font-size: 12px;
+	}
+
+	.brown__price {
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.brown__colours {
+
+	}
+
+	.grey__text {
+		font-size: 12px;
+	}
+
+	.grey__price {
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.grey__colours {
+
+	}
+
+	.white__text {
+		font-size: 12px;
+	}
+
+	.white__price {
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.white__colours {
+
+	}
+
 }
